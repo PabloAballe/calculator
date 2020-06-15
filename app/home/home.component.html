@@ -1,0 +1,57 @@
+<ActionBar title="                      Calculadora">
+</ActionBar>
+
+    <GridLayout>
+        <ScrollView>
+            <StackLayout class="home-panel">
+
+                <Label text="       Binario, Decimal, Hexadecimal "
+                    class="principal">
+                </Label>
+
+                <GridLayout class="datos" columns="* *">
+                    <Label text="Decimal: " col="0"></Label>
+                    <TextField maxLength="7" col="1" keyboardType="phone"
+                        [(ngModel)]="decimal" (tap)="decidir(10)"
+                        hint="Número decimal">
+                    </TextField>
+
+                </GridLayout>
+                <GridLayout class="datos" columns="* *">
+                    <Label text="Binario: " col="0"></Label>
+                    <TextField maxLength="7" col="1" (tap)="decidir(2)"
+                        keyboardType="phone" [(ngModel)]="binario"
+                        hint="Número binario">
+                    </TextField>
+
+                </GridLayout>
+                <GridLayout class="datos" columns="* *">
+                    <Label text="Octal: " col="0"></Label>
+                    <TextField maxLength="7" (tap)="decidir(8)" col="1"
+                        keyboardType="phone" [(ngModel)]="octal"
+                        hint="Número octal">
+                    </TextField>
+
+                </GridLayout>
+                <GridLayout class="datos" columns="* *">
+                    <Label text="Hexadecimal: " col="0"></Label>
+                    <TextField maxLength="7" col="1" [(ngModel)]="hexadecimal"
+                        (tap)="decidir(16)" hint="Número hexadecimal">
+                    </TextField>
+
+                </GridLayout>
+
+
+                <GridLayout class="botones" columns="120 120">
+                    <Button col="1" class="limpiar" text="C" (tap)="clear()">
+                    </Button>
+                    <Button col="0" class="calcular" text="="
+                        (tap)=" con(this.base, numero)">
+                    </Button>
+
+                </GridLayout>
+            </StackLayout>
+
+        </ScrollView>
+
+    </GridLayout>

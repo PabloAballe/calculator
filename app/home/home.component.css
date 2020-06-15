@@ -1,0 +1,57 @@
+GridLayout, TextField{
+    background-color: white;
+
+ color:white;
+}
+Label{
+
+    font-size: 20;
+    margin: 10;
+    text-align: justify;
+ color:white;
+
+}
+Button{
+    color: white;
+    border-radius: 20;
+    background-color:#00A8C6;
+    font-size: 30;
+     width: 100;
+     margin-left: 120;
+   
+}
+TextField{
+    font-size: 20;
+    text-align: center;
+
+   
+color: white;
+background-color:transparent;
+
+  
+}
+
+GridLayout{
+    background-image: url("https://cdn141.picsart.com/266591338032201.jpg?type=webp&to=min&r=640");
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+ActionBar{
+    background-color:#00A8C6;
+    color: white; 
+    text-align: center;
+}
+
+.calcular{
+   float: left;
+}
+.botones{
+    background: transparent;
+    padding-top: 50;
+    
+}
+.datos{
+
+background: transparent;
+}
